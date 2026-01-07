@@ -14,6 +14,7 @@ author_profile: true
 
 <!-- Journal articles -->
 <h2>Journal articles</h2>
+<hr>
 {% for post in site.publications reversed %}
   {% if post.type == "journal" and post.status == "published" %}
     {% include publication-item.html post=post %}
@@ -22,6 +23,7 @@ author_profile: true
 
 <!-- Under review -->
 <h2>Under review</h2>
+<hr>
 {% for post in site.publications reversed %}
   {% if post.status == "under_review" %}
     {% include publication-item.html post=post %}
@@ -30,6 +32,7 @@ author_profile: true
 
 <!-- Conference proceedings -->
 <h2>Conference proceedings</h2>
+<hr>
 {% for post in site.publications reversed %}
   {% if post.type == "conference" and post.status == "published" %}
     {% include publication-item.html post=post %}

@@ -1,0 +1,23 @@
+<div class="talk-item">
+
+  <!-- Title -->
+  <div class="talk-title">
+    <strong>{{ post.title }}</strong>
+  </div>
+
+  <!-- Conference name -->
+  <div class="talk-meta">
+    <i class="fa fa-users" aria-hidden="true"></i>
+    {{ post.venue }}
+  </div>
+
+  <!-- Meta -->
+  <div class="talk-meta">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    {{ post.date | date: "%B %Y" }}
+    &nbsp;|&nbsp;
+    {{ post.host }},
+    {{ post.location }}
+  </div>
+
+</div>

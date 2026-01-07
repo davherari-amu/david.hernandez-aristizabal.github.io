@@ -1,5 +1,5 @@
 ---
-title: "Bio-inspired non-assembly joints: Design, fabrication and wear performance"
+title: "Bio-inspired non-assembly joints: design, fabrication and wear performance"
 collection: publications
 category: manuscripts
 date: 2024-02-01

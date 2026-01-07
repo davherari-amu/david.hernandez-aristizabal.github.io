@@ -1,5 +1,5 @@
 ---
-title: "Bio-inspired Generative Design for Contact Interfaces"
+title: "Bio-inspired generative design for contact interfaces"
 collection: publications
 category: manuscripts
 date: 2024-02-01

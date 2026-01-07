@@ -1,5 +1,5 @@
 ---
-title: "Turing Pattern Formation Under Heterogeneous Distributions of Parameters for an Activator-Depleted Reaction Model"
+title: "Turing pattern formation under heterogeneous distributions of parameters for an activator-depleted reaction model"
 collection: publications
 category: manuscripts
 date: 2021-03-09
