@@ -1,0 +1,16 @@
+---
+title: "A bulk-surface mechanobiochemical modelling approach for single cell migration in two-space dimensions"
+collection: publications
+category: manuscripts
+date: 2025-02-13
+venue: 'Journal of Theoretical Biology'
+status: "published"
+type: 'journal'
+doi: "10.1016/j.jtbi.2024.111966"
+authors:
+    - David Hernandez-Aristizabal
+    - Diego A. Garzón-Alvarado
+    - Carlos A. Duque-Daza
+    - Anotida Madzvamuse
+abstract: "In this work, we present a mechanobiochemical model for two-dimensional cell migration which couples mechanical properties of the cell cytosol with biochemical processes taking place near or on the cell plasma membrane. The modelling approach is based on a recently developed mathematical formalism of evolving bulk-surface partial differential equations of reaction–diffusion type. We solve these equations using finite element methods within a moving-mesh framework derived from the weak formulation of the evolving bulk-surface PDEs. In the present work, the cell cytosol interior (bulk) dynamics are coupled to the cell membrane (surface) dynamics through non-homogeneous Dirichlet boundary conditions. The modelling approach exhibits both directed cell migration in response to chemical cues as well as spontaneous migration in the absence of such cues. As a by-product, the approach shows fundamental characteristics associated with single cell migration such as: (i) cytosolic and membrane polarisation, (ii) actin dependent protrusions, and (iii) continuous shape deformation of the cell during migration. Cell migration is an ubiquitous process in life that is mainly triggered by the dynamics of the actin cytoskeleton and therefore is driven by both mechanical and biochemical processes. It is a multistep process essential for mammalian organisms and is closely linked to a vast diversity of processes; from embryonic development to cancer invasion. Experimental, theoretical and computational studies have been key to elucidate the mechanisms underlying cell migration. On one hand, rapid advances in experimental techniques allow for detailed experimental measurements of cell migration pathways, while, on the other, computational approaches allow for the modelling, analysis and understanding of such observations. The bulk-surface mechanobiochemical modelling approach presented in this work, set premises to study single cell migration through complex non-isotropic environments in two- and three-space dimensions."
+---

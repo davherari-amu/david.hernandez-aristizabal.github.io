@@ -1,0 +1,16 @@
+---
+title: "Stress-adaptive design of 2D contact interfaces with uniform pressure: A bio-inspired approach"
+collection: publications
+category: manuscripts
+date: 2023-05-01
+venue: 'International Journal of Solids and Structures'
+status: "published"
+type: 'journal'
+doi: "10.1016/j.ijsolstr.2023.112238"
+authors:
+    - David Hernandez-Aristizabal
+    - Santiago Arroyave-Tobón
+    - Diego A. Garzón-Alvarado
+    - Jean-Marc Linares
+abstract: "In this article, a bio-mimetic approach to the generative design of contact interfaces with uniform pressure distribution is explored. During the morphogenesis process, biological joints grow depending on the states of stress generating a shape adapted to the mechanical loads. This adaptation is driven by two main rules: shear stress inhibits growth, whereas cyclic hydrostatic compressive stress promotes it. In this work, we demonstrate that the stress-dependent growth rules of synovial joint morphogenesis can be applied to generate contact interfaces with uniform pressure in engineering applications. For that, we present a mathematical model that comprises a contact formulation and a bio-inspired growth function; the model is solved numerically using finite element methods. We analyse the impact of the growth rules of synovial joint development on the contact pressure distribution of two-dimensional contact interfaces. We study the parameter space of the bio-inspired growth function to fine-tune the model parameters. The model is tested in several cases with different boundary conditions and material properties. The results show that the proposed generative design process leads to contact interfaces that provide uniform contact pressure. A quantitative metric of the uniformity of the contact pressure is also defined. This metric indicates that the bio-inspired process generates geometries as good as those obtained with other methods present in the literature without the need of an initial shape close to the final one. Thus, this work demonstrates that synovial joint morphogenesis can be adapted for generative design in engineering."
+---
