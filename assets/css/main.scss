@@ -72,3 +72,15 @@
   background: linear-gradient(to right, #ddd, transparent, transparent);
 }
 
+/* ==================================================
+   Custom bullets
+   ================================================== */
+ul.no-bullets {
+    list-style: none; /* removes the default bullet */
+    padding-left: 0;  /* removes default indentation */
+    margin-left: 0;   /* optional: remove left margin */
+}
+
+ul.no-bullets li {
+    margin-left: 1em; /* optional: spacing between icon and text */
+}
