@@ -1,0 +1,37 @@
+<div class="portfolio-item">
+  <!-- Title -->
+  {% assign pub_post = site.publications | where: "path", post.publication | first%}
+  <div class="portfolio-title">
+      <strong>
+      <a href="https://doi.org/{{ pub_post.doi }}" target="_blank">
+        <strong>{{ post.title }}</strong>
+      </a>
+      </strong>
+  </div>
+
+  <!-- Images -->
+  {% if post.images %}
+    <div class="portfolio-images">
+      {% for img in post.images %}
+        <img src="{{ img }}" alt="{{ post.title }} image {{ forloop.index }}">
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- Videos -->
+  {% if post.videos %}
+    <div class="portfolio-videos">
+      {% for video in post.videos %}
+        <video controls width="480" style="margin-bottom: 1em;">
+          <source src="{{ video }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <!-- Description -->
+  {% if post.description %}
+    {{ post.description }}
+  {% endif %}
+</div>

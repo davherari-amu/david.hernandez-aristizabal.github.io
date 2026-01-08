@@ -4,6 +4,8 @@ permalink: /teaching/
 author_profile: true
 ---
 
+{% include base_path %}
+
 <!-- Get teaching institutions -->
 {% assign all_teaching = site.teaching | sort: "date-start" | reverse %}
 {% assign hosts = all_teaching | map: "host" | uniq %}

@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+{% include base_path %}
+
 ## Presentation
 My research activities lie at the interface of **mathematical modelling**,
 **mechanobiology**, and **numerical simulation**.
