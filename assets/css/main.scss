@@ -41,3 +41,34 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* ==================================================
+   Custom horizontal rules (academic style)
+   ================================================== */
+
+.hr-thick {
+  border: 0;
+  border-top: 2px solid #ddd;
+  margin: 1em 0;
+}
+
+.hr-thin {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin: 0em 0;
+}
+
+.hr-fade {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ddd, transparent);
+  margin: 2em 0;
+}
+
+.hr-thin-gradient {
+  border: 0;
+  height: 1px;
+  margin: 0em 0;
+  background: linear-gradient(to right, #ddd, transparent, transparent);
+}
+

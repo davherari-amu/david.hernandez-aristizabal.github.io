@@ -1,12 +1,22 @@
 ---
 layout: archive
-title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<!-- Get teaching institutions -->
+{% assign all_teaching = site.teaching | sort: "date-start" | reverse %}
+{% assign hosts = all_teaching | map: "host" | uniq %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+<!-- Plot by institution -->
+{% for host in hosts %}
+  {% assign classes = site.teaching | where: "host", host | reverse %}
+  <h2>{{ host }}</h2>
+  <hr class="hr-thick">
+  {% for post in classes %}
+    {% include teaching-item.html post=post %}
+    {% unless forloop.last %}
+      <hr class="hr-thin-gradient">
+    {% endunless %}
+  {% endfor %}
 {% endfor %}

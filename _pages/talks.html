@@ -5,19 +5,23 @@ author_profile: true
 ---
 
 <!-- Oral presentations -->
+{% assign oral_talks = site.talks | where: "type", "oral" | reverse %}
 <h2>Presentations</h2>
-<hr>
-{% for post in site.talks reversed %}
-    {% if post.type == "oral" %}
-        {% include talk-item.html %}
-    {% endif %}
+<hr class="hr-thick">
+{% for post in oral_talks %}
+  {% include talk-item.html %}
+  {% unless forloop.last %}
+    <hr class="hr-thin-gradient">
+  {% endunless %}
 {% endfor %}
 
 <!-- Posters -->
+{% assign posters = site.talks | where: "type", "poster" | reverse %}
 <h2>Posters</h2>
-<hr>
-{% for post in site.talks reversed %}
-    {% if post.type == "poster" %}
-        {% include talk-item.html %}
-    {% endif %}
+<hr class="hr-thick">
+{% for post in posters %}
+  {% include talk-item.html %}
+  {% unless forloop.last %}
+    <hr class="hr-thin-gradient">
+  {% endunless %}
 {% endfor %}

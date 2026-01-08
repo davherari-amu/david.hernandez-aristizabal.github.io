@@ -14,27 +14,37 @@ author_profile: true
 
 <!-- Journal articles -->
 <h2>Journal articles</h2>
-<hr>
-{% for post in site.publications reversed %}
-  {% if post.type == "journal" and post.status == "published" %}
-    {% include publication-item.html post=post %}
-  {% endif %}
+{% assign journal_articles = site.publications | where: "type", "journal" %}
+{% assign published_articles = journal_articles | where: "status", "published" | reverse %}
+<hr class="hr-thick">
+{% for post in published_articles %}
+  {% include publication-item.html post=post %}
+  {% unless forloop.last %}
+    <hr class="hr-thin-gradient">
+  {% endunless %}
 {% endfor %}
 
 <!-- Under review -->
-<h2>Under review</h2>
-<hr>
-{% for post in site.publications reversed %}
-  {% if post.status == "under_review" %}
+{% assign under_review = journal_articles | where: "status", "under_review" | reverse %}
+{% unless under_review == empty %}
+  <!-- Under review -->
+  <h2>Under review</h2>
+  <hr class="hr-thick">
+  {% for post in under_review %}
     {% include publication-item.html post=post %}
-  {% endif %}
-{% endfor %}
+    {% unless forloop.last %}
+      <hr class="hr-thin-gradient">
+    {% endunless %}
+  {% endfor %}
+{% endunless %}
 
 <!-- Conference proceedings -->
 <h2>Conference proceedings</h2>
-<hr>
-{% for post in site.publications reversed %}
-  {% if post.type == "conference" and post.status == "published" %}
-    {% include publication-item.html post=post %}
-  {% endif %}
+{% assign proceedings = site.publications | where: "type", "conference" %}
+<hr class="hr-thick">
+{% for post in proceedings %}
+  {% include publication-item.html post=post %}
+  {% unless forloop.last %}
+    <hr class="hr-thin-gradient">
+  {% endunless %}
 {% endfor %}
